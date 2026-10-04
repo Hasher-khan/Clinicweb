@@ -1,0 +1,73 @@
+Create a hyper-modern, ultra-clean, and highly animated single-page web application for a premium medical practice named "AuraHealth Clinic". Build it using React, Vite, TypeScript, Tailwind CSS, and Framer Motion. The user interface must look like a world-class premium digital product, utilizing generous white space, soft sophisticated shadows, subtle glassmorphism, and a strict color palette.
+
+### 🎨 Color Palette & Aesthetic
+- Primary (60%): Pure White (#FFFFFF) and Slate Light (#F8FAFC) for a bright, clinical, yet ultra-clean feel.
+- Secondary (30%): Deep Navy Midnight (#0F172A) for typography, structured borders, and high-contrast elements.
+- Accents (10%): Calming Medical Teal (#0D9488) and Soft Emerald (#10B981) used strictly for interactive elements, highlights, and micro-glow effects.
+
+### ✨ Animation & Motion System (Framer Motion)
+- Page Loads: Gentle staggered reveal on text elements (y: 20 to 0, opacity: 0 to 1).
+- Scroll Triggers: All structural layout sections must use `whileInView` with a threshold of 0.15 for progressive revealing.
+- Micro-interactions: Cards should elevate slightly on hover (scale: 1.02, y: -4) with a smooth spring transition (`type: "spring", stiffness: 300, damping: 20`).
+- Progress Bars/Counters: Medical metrics must dynamically counter-increment or fill up smoothly when scrolled into view.
+
+### 🧱 Comprehensive Section Breakdown (13 Distinct UI Elements)
+
+1. Sticky Glassmorphism Navbar:
+   - Backdrop blur (blur-md) with 80% opacity white background.
+   - Left side: Elegant typography logo with an animated SVG pulse icon next to it.
+   - Center: Animated navigation links with a sliding pill background that moves behind whichever item is hovered.
+   - Right side: Secondary "Emergency Hotline" badge and a Primary Teal CTA button ("Book Appointment") that expands slightly on hover.
+
+2. Immersive Split-Hero Section:
+   - Left column: Dynamic typography with a high-contrast headline ("Modern Care, Human Touch."). Below it, a short description with an interactive, animated inline badge showing "⚡ Real-Time Doctor Availability: 4 Active General Practitioners". Two interactive CTAs: Primary "Schedule Online Now" and Secondary "Watch Clinic Tour".
+   - Right column: An abstract layout containing a crisp, high-resolution portrait ratio placeholder of a modern clinic interior, layered with floating animated UI cards. Card A floats gently and shows "Average wait time: 4.2 mins". Card B shows "Patient Satisfaction: 99.4%".
+
+3. Dynamic "Same-Day Care" Marquee Strip:
+   - A full-width horizontal marquee ticker that scrolls infinitely and seamlessly left-to-right.
+   - Contains looping text fragments separated by glowing green dots: "🟢 SAME-DAY APPOINTMENTS AVAILABLE" • "⚡ INSTANT DIGITAL LAB RESULTS" • "🩺 IN-HOUSE PHARMACY OPEN" • "🛡️ MOST MAJOR INSURANCES ACCEPTED".
+
+4. Interactive Appointment Length Selector:
+   - Three distinct card choices: "15-Minute Express Check" (Routine script/refill), "30-Minute Standard Care" (Detailed analysis), and "60-Minute Deep Dive" (Chronic or complex consultation).
+   - Clicking a card updates a central "Estimated Out-of-Pocket Cost" calculator component right below it with a smooth fade animation.
+
+5. Grid of 8 Core Clinical Services:
+   - A clean 4x2 responsive grid. Services include: General Medicine, Cardiology, Pediatrics, Women's Health, Diagnostics, Preventive Screenings, Dermatology, and Telehealth.
+   - Each service box contains a custom SVG line icon. On hover, the SVG icon path should draw/animate itself, and the card's border should shift from a muted slate to an accent teal.
+
+6. Our Specialists (Medical Team Showcase):
+   - A carousel or grid containing three top doctor profile cards.
+   - Each card lists: High-quality headshot placeholder, Doctor Name, Specialty, University Credentials, and active License/Registration Number.
+   - Clicking "View Bio & Research" on any card opens a beautifully animated full-screen modal showing their deep career summary and a list of available appointment slots.
+
+7. Transparent Pricing & Monthly Memberships:
+   - A sliding toggle switch at the top to change view between "Pay-As-You-Go" and "Annual Membership Tiers".
+   - Features three minimal layout pricing columns: "Essential Care", "Premium Health" (Highlighted with an active, pulsing neon border), and "Executive Elite".
+   - Each tier displays explicit pricing, feature list with checkmarks, and an independent checkout CTA button.
+
+8. "What to Expect" Step-by-Step Timeline:
+   - A horizontal path diagram or timeline that transforms into a vertical line on mobile.
+   - Steps: 1. Digital Pre-Checkin (Fill forms out via text link) -> 2. Welcoming Arrival (Scan QR code at front desk) -> 3. Personalized Care (One-on-one doctor assessment) -> 4. Smart Follow-up (Prescriptions sent digitally). Each step reveals sequentially using Framer Motion stagger.
+
+9. Digital Tests & Turnaround Dashboard Preview:
+   - A visual mock dashboard interface showing a patient's lab portal.
+   - Includes an interactive slider where users choose a test type (e.g., "Full Blood Panel", "PCR Test", "X-Ray") and a dynamic status bar animates to show the exact historical speed/turnaround time data for that test.
+
+10. Accordion-Style FAQ Section:
+    - Clean slate-bordered accordion elements that smoothly transition and expand height when clicked to answer queries about insurance coverage, cancellation policies, and what to bring to a first visit.
+
+11. Physical Location, Directions & Mapping:
+    - Left side: Full clinic address, precise parking validation info, subway/transit instructions, and operating hours table.
+    - Right side: A styled, minimalist custom map mock-up or embedded map window demonstrating where the dedicated customer parking structure is located.
+
+12. Verified Social Proof / Patient Reviews:
+    - An auto-scrolling testimonial carousel component.
+    - Displaying 5-star ratings, patient quotes describing the pristine cleanliness and modern efficiency of the staff, and an "Aggregated Score: 4.9/5 from 2,400+ patients" sidebar widget.
+
+13. Comprehensive Utility Footer:
+    - High-density layout separating a 4-column site directory map, medical compliance & legal privacy disclosures, newsletter form with success-state micro-animations, and social networking handles.
+
+### 🛠 Technical Rules
+- Ensure 100% responsive break-points (`sm`, `md`, `lg`, `xl`) for beautiful layouts from iPhone SE up to 4K displays.
+- Use explicit semantic HTML tags throughout (`<header>`, `<main>`, `<section>`, `<footer>`).
+- No external heavy assets; construct all visual elements, iconography, patterns, and badges natively using pure Tailwind code and lightweight SVG structures. Make it look exceptionally professional.
